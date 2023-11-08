@@ -141,14 +141,22 @@ nav li {
 }
 
 .main-products-item {
-  justify-self: start; /* Align left horizontally */
-  align-self: end; /* Align bottom vertically */
+  justify-self: center; /* Align left horizontally */
+  align-self: flex-start; /* Align bottom vertically */
   display: flex;
   flex-direction: column;
   margin-left: 10px;
   margin-right: 10px;
-  width: auto;
   margin-bottom: 40px;
+  height: auto;
+}
+
+.main-products-item img {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.9);
+
+  margin-bottom: 15px;
 }
 
 .main-products-item h3 {
@@ -158,7 +166,6 @@ nav li {
 
 .main-products-item p {
   font-size: 1.6rem;
-  padding-left: 5px;
 }
 
 /* NEWS */
@@ -204,10 +211,11 @@ nav li {
   grid-area: poll;
   display: flex;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .poll-container {
-  height: 80%;
   background-color: var(--just-white);
   padding: 10px;
 }
@@ -219,6 +227,12 @@ nav li {
 .poll-container__fq {
   margin-top: 20px;
   color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.poll-container__radio {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .poll-container__titles {
