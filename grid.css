@@ -1,0 +1,7 @@
+main {
+  display: grid;
+  grid-template-areas:
+    "hero hero hero"
+    "products products products"
+    "news news poll";
+}
