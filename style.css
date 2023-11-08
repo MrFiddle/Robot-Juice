@@ -287,3 +287,19 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+.footer__bottom ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__bottom-legal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__bottom-legal li {
+  margin-right: 20px;
+}
