@@ -211,10 +211,11 @@ nav li {
   grid-area: poll;
   display: flex;
   align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .poll-container {
-  height: 80%;
   background-color: var(--just-white);
   padding: 10px;
 }
@@ -226,6 +227,12 @@ nav li {
 .poll-container__fq {
   margin-top: 20px;
   color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.poll-container__radio {
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .poll-container__titles {

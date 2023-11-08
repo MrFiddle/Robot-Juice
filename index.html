@@ -152,12 +152,23 @@
 
       <!-- POLL -->
       <section class="poll">
-        <div class="poll-container">
+        <form class="poll-container">
           <h2 class="poll-container__titles">Reader Poll</h2>
           <p class="poll-container__fq">
             Are Robot Juice the best and most usable and accesible fake oils
             around?
           </p>
+
+          <!-- Radio buttons with yes and no -->
+          <div class="poll-container__radio">
+            <input type="radio" id="yes" name="poll" value="yes" />
+            <label for="yes">Yes</label>
+          </div>
+
+          <div class="poll-container__radio">
+            <input type="radio" id="no" name="poll" value="no" />
+            <label for="no">No</label>
+          </div>
 
           <h2 class="poll-container__titles">Competition</h2>
           <p>
@@ -183,7 +194,7 @@
 
           <br />
           <p>answer on a postcard please.</p>
-        </div>
+        </form>
       </section>
     </main>
     <!-- Footer -->
