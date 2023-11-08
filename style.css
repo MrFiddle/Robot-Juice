@@ -55,6 +55,11 @@ header {
   width: 300px;
 }
 
+.logo a {
+  text-decoration: none;
+  color: var(--just-black);
+}
+
 .logo .title {
   font-size: 6rem;
   font-family: "Damion", cursive;
@@ -97,10 +102,21 @@ nav li {
   align-items: center;
   font-size: 1.6rem;
   padding: 20px;
+  color: var(--dark-gray);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: var(--dark-gray);
 }
 
 .nav-item:hover {
   background-color: var(--primary);
+  color: var(--just-white);
+  cursor: pointer;
+}
+
+.nav-item:hover a {
   color: var(--just-white);
 }
 
@@ -138,6 +154,16 @@ nav li {
   justify-items: center; /* Center horizontally */
   align-items: center; /* Center vertically */
   border-bottom: 1px solid gray;
+}
+
+.main-products a {
+  text-decoration: none;
+  color: var(--just-black);
+}
+
+.main-products-item a:hover img {
+  /* make image bigger */
+  transform: scale(1.1);
 }
 
 .main-products-item {
