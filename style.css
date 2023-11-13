@@ -14,7 +14,7 @@
 html {
   font-size: 62.5%;
   font-family: "Arimo", sans-serif;
-  background-color: rgb(235, 235, 235);
+  background-color: #eee;
 }
 
 /* MISC */
@@ -342,4 +342,99 @@ footer {
 
 .footer__bottom-legal li {
   margin-right: 20px;
+}
+
+/* PRODUCT PAGE */
+.product-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-gap: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid gray;
+}
+
+.product-container__gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-container__gallery img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-container__main-pic img {
+  width: 100%;
+}
+
+.product-container__main-pic img {
+  width: 100%;
+}
+
+.product-container__product-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 450px;
+}
+
+.product-container__product-details--right-text {
+  text-align: right;
+  width: 100%;
+  color: gray;
+}
+
+.product-container__product-details h2 {
+  font-family: "Iceberg", sans-serif;
+  font-size: 2.4rem;
+}
+
+.product-container__product-details button {
+  background-color: var(--primary);
+  color: var(--just-white);
+  border: none;
+  padding: 5px;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.product-container__product-details--price {
+  font-size: 1.6rem;
+  color: var(--primary);
+  margin-bottom: 20px;
+}
+
+.product-container__product-details--qty {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.product-container__product-details--qty select {
+  height: 30px;
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  width: 49%;
+}
+
+.product-container__product-details--share {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.product-container__product-details--share * {
+  color: gray;
+  margin-left: 5px;
 }
