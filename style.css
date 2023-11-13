@@ -40,6 +40,11 @@ html {
   color: var(--primary);
 }
 
+.titles {
+  font-family: "Iceberg", sans-serif;
+  font-size: 2.4rem;
+}
+
 /* HEADER */
 
 header {
@@ -347,9 +352,9 @@ footer {
 /* PRODUCT PAGE */
 .product-container {
   display: grid;
+  grid-area: product;
   grid-template-columns: auto auto auto;
   margin-top: 50px;
-  margin-bottom: 50px;
   grid-gap: 20px;
   padding-bottom: 30px;
   border-bottom: 1px solid gray;
@@ -437,4 +442,110 @@ footer {
 .product-container__product-details--share * {
   color: gray;
   margin-left: 5px;
+}
+
+/* Similar Products */
+.similarProducts-container {
+  grid-area: similar;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.similarProducts-container h2 {
+  padding-bottom: 20px;
+}
+
+.similarProducts-container__grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.reviews-container {
+  grid-area: reviews;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.reviews-container__title {
+  border-bottom: 1px solid gray;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.reviews-container__title span {
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+.reviews-container__grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+}
+
+.reviews-container__grid--review {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  padding: 30px;
+  border-bottom: 1px solid gray;
+}
+
+.reviews-container__grid--review--user {
+  display: flex;
+  width: 40%;
+}
+
+.reviews-container__grid--review--user img {
+  border-radius: 20px;
+}
+
+.reviews-container__grid--review__rating {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.reviews-container__grid--review__rating p {
+  font-family: "Iceberg", sans-serif;
+  font-size: 2.4rem;
+  color: var(--primary);
+}
+
+.reviews-container__grid--review__rating h3 {
+  font-size: 2rem;
+}
+
+.reviews-container__grid--review__text {
+  font-size: 1.6rem;
+  margin-left: 20px;
+  width: 60%;
+}
+
+.reviews-container__read-all-button {
+  background-color: var(--primary);
+  color: var(--just-white);
+  border: none;
+  padding: 5px;
+  font-size: 1.6rem;
+  margin-top: 40px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 20%;
+  height: 40px;
 }
