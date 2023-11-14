@@ -6,6 +6,11 @@ function review_rating(number) {
   return rating;
 }
 
+function random_icon() {
+  let random = Math.floor(Math.random() * 2) + 1;
+  return `./assets/reviewicon${random}.jpg`;
+}
+
 const apiLink = "https://cis1110apicw.computing.edgehill.ac.uk/reviews";
 
 fetch(apiLink)
@@ -19,7 +24,7 @@ fetch(apiLink)
       const code = `
         <article class="reviews-container__grid--review">
           <div class="reviews-container__grid--review--user">
-            <img src="./assets/reviewicon1.jpg" alt="User image" />
+            <img src="${random_icon()}" alt="User image" />
             <div class="reviews-container__grid--review__rating">
               <p>${review_rating(data[i].rating)}<p>
               <h3>${data[i].nickname}</h3>

@@ -490,7 +490,6 @@ footer {
 .reviews-container__grid {
   display: grid;
   grid-template-columns: auto;
-  grid-gap: 20px;
   justify-items: center;
   align-items: center;
 }
@@ -498,7 +497,7 @@ footer {
 .reviews-container__grid--review {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   width: 100%;
   padding: 30px;
   border-bottom: 1px solid gray;
