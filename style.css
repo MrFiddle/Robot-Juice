@@ -45,6 +45,10 @@ html {
   font-size: 2.4rem;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 
 header {
