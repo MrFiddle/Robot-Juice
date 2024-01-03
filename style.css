@@ -417,6 +417,7 @@ footer {
   font-size: 1.6rem;
   margin-bottom: 20px;
   width: 100%;
+  cursor: pointer;
 }
 
 .product-container__product-details--price {
@@ -557,4 +558,5 @@ footer {
   margin-bottom: 20px;
   width: 20%;
   height: 40px;
+  cursor: pointer;
 }

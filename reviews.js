@@ -1,3 +1,4 @@
+// Function to generate a string of stars based on the rating
 function review_rating(number) {
   let rating = "";
   for (let i = 0; i < number; i++) {
@@ -6,11 +7,13 @@ function review_rating(number) {
   return rating;
 }
 
+// Function to generate a random icon
 function random_icon() {
   let random = Math.floor(Math.random() * 2) + 1;
   return `./assets/reviewicon${random}.jpg`;
 }
 
+// Fetch the data from the API
 const apiLink = "https://cis1110apicw.computing.edgehill.ac.uk/reviews";
 
 fetch(apiLink)
@@ -40,4 +43,5 @@ fetch(apiLink)
       document.querySelector(".reviews-container__grid").innerHTML += code;
     }
   })
+  // Catch any errors and log them to the console
   .catch((error) => console.error(error));
