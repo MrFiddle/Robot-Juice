@@ -171,18 +171,6 @@ nav li {
 }
 
 .main-products-item {
-  /* Align left horizontally */
-  /* justify-self: center; */
-  /* Align bottom vertically */
-  /* align-self: flex-start;  */
-
-  /* display: flex;
-  flex-direction: column;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 40px;
-  height: auto; */
-
   /* grid area */
   display: grid;
   grid-template-rows: auto auto auto;
@@ -194,8 +182,8 @@ nav li {
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 40px;
-  align-items: start;
-  justify-items: center;
+  align-items: center;
+  justify-items: start;
   max-width: 200px;
 }
 
