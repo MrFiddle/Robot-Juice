@@ -477,6 +477,8 @@ footer {
   align-items: center;
 }
 
+/* Reviews */
+
 .reviews-container {
   grid-area: reviews;
   display: flex;
